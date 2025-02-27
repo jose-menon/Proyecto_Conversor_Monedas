@@ -46,6 +46,7 @@ public class Main
                     System.out.println("Ingrese la Cantidad a Convertir: ");
                     var cantidad = Integer.valueOf(lectura.nextLine());
                     Conversor conversor = consulta.conversion(cantidad,entrada, salida);
+                    System.out.println("Conversion Exitosa!!");
                     System.out.println(conversor);
                     Generador_Archivo generador = new Generador_Archivo();
                     generador.guardarDatos(conversor);
